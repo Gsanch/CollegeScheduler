@@ -1,6 +1,6 @@
 <?php
 
-require_once('table.php');
+require_once('database_container.php');
 
 $db = new Database("127.0.0.1", "php_rest_api_db", "root", "");
 
