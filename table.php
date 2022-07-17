@@ -3,10 +3,10 @@ class Database
 {
     private $pdo;
 
-    public function_construct($host,$dbname,$username,$password)
+    public function __construct($host,$dbname,$username,$password)
     {
     $con = new PDO ('mysql:host='.$host.'; dbname='.$dbname.';', $username, $password);
-    $con->setAttribute(PDO::ATTR_ERRMONE, PDO::ERROMODE_EXCEPTION);
+    $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $this->pdo = $con;
     }
     public function query($show)
