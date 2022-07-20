@@ -19,6 +19,6 @@ class Database
             $data = $stmt->fetchAll();
             return $data;
         }
-      }
     }
+}
 ?>
